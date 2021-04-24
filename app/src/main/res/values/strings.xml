@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Canva IO</string>
+    <string name="buttonSave">Save</string>
+    <string name="editTextFirstNameHint">Osid</string>
+    <string name="textViewFirstName">First Name</string>
+    <string name="textViewLastName">Last Name</string>
+    <string name="editTextLastNameHint">Abu-Alrub</string>
+    <string name="genderTxtView">Gender</string>
+    <string name="radioButtonMale">Male</string>
+    <string name="radioButtonFemale">Female</string>
+    <string name="textViewEmail">Email</string>
+    <string name="editTextEmailHint">abualrub.osid@gmail.com</string>
+    <string name="textViewSpinner">What Makes You Happy?</string>
+    <string name="experience">Experience</string>
+    <string name="education">Education</string>
+    <string name="checkBoxDoYouHaveEducation">Do You Have Education?</string>
+    <string name="editTextSchoolName">Birzeit</string>
+    <string name="textViewSchoolName">School Name</string>
+    <string name="textViewFrom">From</string>
+    <string name="editTextFrom">2000</string>
+    <string name="textViewTo">To</string>
+    <string name="editTextTo">2010</string>
+    <string name="textViewLevel">Level</string>
+    <string name="navPersonal">Personal</string>
+    <string name="navWorkExperience">Experience</string>
+    <string name="navEducation">Education</string>
+    <string name="checkBoxDoYouHaveWorkExperience">Do You Have Work Experience?</string>
+    <string name="textViewWorkPlace">Work Place</string>
+    <string name="editTextWorkPlace">Google</string>
+    <string name="textViewRole">Role</string>
+    <string name="editTextRole">Software Engineer</string>
+    <string name="buttonAdd">Add</string>
+    <string name="textViewMajor">Major</string>
+    <string name="editTextMajor">CS</string>
+</resources>

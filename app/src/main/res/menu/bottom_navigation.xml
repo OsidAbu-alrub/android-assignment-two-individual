@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navPersonal"
+        android:icon="@drawable/personal_selector"
+        android:title="@string/navPersonal"/>
+
+    <item
+        android:id="@+id/navWorkExperience"
+        android:icon="@drawable/experience_selector"
+        android:title="@string/navWorkExperience"/>
+
+    <item
+        android:id="@+id/navEducation"
+        android:icon="@drawable/education_selector"
+        android:title="@string/navEducation"/>
+
+
+
+</menu>

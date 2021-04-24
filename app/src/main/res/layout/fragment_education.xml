@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/navEducation"
+    android:background="@color/primary_light_black">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigation">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressBackgroundTint="@color/primary_yellow"
+                android:progressTint="@color/primary_yellow"
+                android:max="99"
+                android:progress="99"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxDoesHaveEducation"
+                android:text="@string/checkBoxDoYouHaveEducation"
+                style="@style/checkbox" />
+
+            <!--  EDUCATION  -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutEducation"
+                style="@style/layouts"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/txtView"
+                    android:text="@string/textViewSchoolName"
+                    android:layout_above="@+id/editTextSchoolName"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextSchoolName"
+                    style="@style/editText"
+                    android:hint="@string/editTextSchoolName"
+                    />
+
+                <TextView
+                    style="@style/txtView"
+                    android:text="@string/textViewMajor"
+                    android:layout_above="@+id/editText"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextMajor"
+                    style="@style/editText"
+                    android:hint="@string/editTextMajor"
+                    />
+
+                <TextView
+                    style="@style/txtView"
+                    android:text="@string/textViewFrom"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextFrom"
+                    style="@style/editText"
+                    android:inputType="number"
+                    android:hint="@string/editTextFrom"
+                    />
+
+                <TextView
+                    style="@style/txtView"
+                    android:text="@string/textViewTo"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextTo"
+                    style="@style/editText"
+                    android:inputType="number"
+                    android:hint="@string/editTextTo"
+                    />
+
+                <TextView
+                    style="@style/txtView"
+                    android:text="@string/textViewLevel"
+                    android:layout_marginTop="20dp"/>
+                <Spinner
+                    android:id="@+id/spinner"
+                    style="@style/editText" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- ADD & SAVE -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <Button
+                        android:id="@+id/buttonSave"
+                        style="@style/buttonStyle"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/buttonSave"
+                        />
+                    <Button
+                        android:id="@+id/buttonAdd"
+                        style="@style/buttonStyle"
+                        android:text="@string/buttonAdd"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/buttonSave"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/listview"
+                style="@style/listview"
+                android:visibility="gone">
+            </ListView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/navPersonal">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigation">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressBackgroundTint="@color/primary_yellow"
+                android:progressTint="@color/primary_yellow"
+                android:max="99"
+                android:progress="33"/>
+
+            <!--FIRST NAME-->
+            <androidx.appcompat.widget.LinearLayoutCompat style="@style/layouts">
+                <TextView
+                    style="@style/txtView"
+                    android:text="@string/textViewFirstName" />
+                <EditText
+                    android:id="@+id/editTextFirstName"
+                    style="@style/editText"
+                    android:hint="@string/editTextFirstNameHint"
+                    android:inputType="textPersonName" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!--LAST NAME-->
+            <androidx.appcompat.widget.LinearLayoutCompat style="@style/layouts">
+                <TextView
+                    style="@style/txtView"
+                    android:text="@string/textViewLastName" />
+                <EditText
+                    android:id="@+id/editTextLastName"
+                    style="@style/editText"
+                    android:hint="@string/editTextLastNameHint"
+                    android:inputType="textPersonName" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!--GENDER-->
+            <androidx.appcompat.widget.LinearLayoutCompat style="@style/layouts">
+                <TextView
+                    style="@style/txtView"
+                    android:text="@string/genderTxtView" />
+                <RadioGroup
+                    android:id="@+id/radioGroupGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/radioButtonMale"
+                        android:text="@string/radioButtonMale"
+                        style="@style/radioBtn" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/radioButtonFemale"
+                        android:text="@string/radioButtonFemale"
+                        style="@style/radioBtn" />
+                </RadioGroup>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!--EMAIL-->
+            <androidx.appcompat.widget.LinearLayoutCompat style="@style/layouts">
+                <TextView
+                    style="@style/txtView"
+                    android:text="@string/textViewEmail" />
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    style="@style/editText"
+                    android:hint="@string/editTextEmailHint"
+                    android:inputType="textEmailAddress" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- SPINNER-->
+            <androidx.appcompat.widget.LinearLayoutCompat style="@style/layouts">
+                <TextView
+                    style="@style/txtView"
+                    android:text="@string/textViewSpinner" />
+                <Spinner
+                    android:id="@+id/spinner"
+                    style="@style/editText" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- NEXT -->
+            <Button
+                android:id="@+id/buttonSave"
+                style="@style/buttonStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/buttonSave" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</RelativeLayout>
